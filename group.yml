@@ -1,0 +1,9 @@
+--- # Group Moudule 
+- hosts: apacheweb
+  user: test
+  sudo: yes
+  connection: yes
+  gather_facts: no
+  tasks:
+   - name: Add a new group
+     group: name=newgroup state=present

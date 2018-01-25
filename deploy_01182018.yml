@@ -1,0 +1,8 @@
+
+ - hosts: appserver
+   tasks:
+   - name: Installing the lynx package
+     yum: pkg=lynx state=latest
+     
+   - name: Installing telnet
+     yum: pkg=telnet state=latest 

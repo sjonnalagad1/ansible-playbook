@@ -1,0 +1,8 @@
+--- # example of ping module
+
+- hosts: all
+  user: test
+  gather_facts: no
+  tasks:
+   - name: this is simple ping module
+     ping: 

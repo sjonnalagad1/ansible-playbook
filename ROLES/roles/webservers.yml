@@ -1,0 +1,8 @@
+
+ - hosts: apacheweb
+   user: test
+   sudo: yes
+   connection: ssh
+   roles:
+    - webservers
+

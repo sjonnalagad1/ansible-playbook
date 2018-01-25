@@ -1,0 +1,9 @@
+--- # Raw Module
+- hosts: apacheweb
+  user: test
+  sudo: yes
+  connection: ssh
+  gather_facts: no
+  tasks:
+   - name: Executing the uptime command
+     raw: /usr/bin/uptime > uptime.log

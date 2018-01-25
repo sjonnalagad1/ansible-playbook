@@ -1,0 +1,6 @@
+- name: Install (Red Hat/CentOS) Apache Web Server
+  yum: pkg=httpd state=installed
+  when: "ansible_os_family=='RedHat'"
+- name: Install (Debian/Ubuntu) Apache web server
+  apt: pkg= {{debian_apache}} state=latest
+  when: "ansible_os_family=='Debian'"
